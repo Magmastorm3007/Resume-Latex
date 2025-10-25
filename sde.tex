@@ -1,10 +1,10 @@
 \documentclass[10pt]{resume}
-\usepackage[left=0.5in,top=0.35in,right=0.5in,bottom=0.35in]{geometry}
+\usepackage[left=0.45in,top=0.3in,right=0.45in,bottom=0.3in]{geometry}
 \usepackage{hyperref}
 \usepackage{enumitem}
-\setlist[itemize]{noitemsep, topsep=2pt, left=0.8em}
+\setlist[itemize]{noitemsep, topsep=1pt, left=0.8em}
 
-\setlength{\parskip}{2pt}
+\setlength{\parskip}{1.5pt}
 \setlength{\parsep}{0pt}
 \renewcommand{\baselinestretch}{1.0}
 
@@ -13,70 +13,86 @@
 \address{\href{https://live-portfolio-3d.onrender.com}{Portfolio} \quad
 \href{https://github.com/Magmastorm3007}{GitHub} \quad
 \href{https://leetcode.com/u/user5454Z}{LeetCode} \quad
-\href{https://magmastorm.hashnode.dev}{Blog} \quad
-\href{https://magmastorm.itch.io}{Gamedev}}
+\href{https://magmastorm.hashnode.dev}{Blog}}
 
 \begin{document}
-\small
+\footnotesize
 
+% -------------------- SUMMARY --------------------
 \begin{rSection}{SUMMARY}
-
-Full-Stack Software Developer with 1.5 years of experience in React, Node.js, AWS, and PySpark. Skilled in building scalable systems, designing automated data pipelines, and delivering production-grade applications in agile environments.Currently working with a leading American Insurance firm with large scale datasets, complex analytical workloads and highly secure environment.
+\textbf{Data \& Software Engineer} with nearly 2 years of experience designing and delivering cloud-native ETL pipelines, backend services, and real-time systems for high-security,  massive datasets in the insurance domain for a leading American Insurance firm. Skilled in \textbf{PySpark, AWS, Node.js, SQL}, with proven expertise in building production-ready data platforms, serverless workflows, and scalable dashboards. Strong track record of optimizing performance, ensuring compliance, and enhancing observability in enterprise environments, delivering measurable business impact.
 \end{rSection}
 
+% -------------------- EXPERIENCE --------------------
+\begin{rSection}{EXPERIENCE}
+
+\textbf{Data Engineer}, LTIMindTree \hfill Dec 2024–Present, Bengaluru
+\begin{itemize}
+  \item Migrated \textbf{50+} legacy ETL workflows from on-premise Informatica systems to \textbf{AWS Glue (PySpark)}, modernizing pipelines for a leading American insurance client and reducing monthly server costs by \textbf{38\%}.
+  \item Built \textbf{serverless pipelines} using AWS Lambda and Step Functions (Python \& Node.js), streamlining event-driven data delivery and cutting software licensing costs by \textbf{20\%}.
+  \item Tuned Spark configurations and partitioning strategies, achieving \textbf{30–50\%} faster execution while handling large-scale datasets.
+  \item Monitored and maintained \textbf{100+} financial tables using Splunk and Stonebranch, implementing automated alerts and daily compliance reports.
+  \item Integrated AWS \textbf{CloudFormation logs into Splunk dashboards} for real-time infrastructure and pipeline observability.
+  \item Implemented data quality and code coverage checks using Pytest and SonarQube, ensuring \textbf{75\%+} coverage across ETL pipelines and backend Lambda services.
+  \item Developed and maintained AWS DMS scripts to migrate databases and validate schemas across on-premise and cloud environments.
+  \item Collaborated with cross-functional teams to deliver production-ready data services using Agile/Scrum and CI/CD pipelines.
+\end{itemize}
+
+\textbf{Software Developer Intern}, HumanAI Pvt. Ltd. \hfill Dec 2023–Jun 2024, Singapore (Remote)
+\begin{itemize}
+  \item Designed a scalable, responsive \textbf{React.js dashboard} to monitor multiple IoT installations, optimizing builds and systemd services to reduce RAM usage by 1GB.
+  \item Developed a \textbf{GPT-4 powered Recipe Analyzer App} (Next.js) with caching optimizations, reducing   GPT API token usage hits by \textbf{30\%} and demonstrating AI-driven cost efficiency.
+  \item Built Web3 applications to interact with smart contracts on \textbf{Hyperledger Besu}, enabling secure and verified blockchain data visualization.
+  \item Collaborated with clients to test, document, and improve REST APIs, accelerating feature delivery and improving overall system reliability.
+\end{itemize}
+
+
+% -------------------- PROJECTS --------------------
+\begin{rSection}{PROJECTS}
+
+\textbf{Samagra Shiksha Dashboard — Software Developer (Contract)} \hfill Jul–Nov 2024, Remote
+\begin{itemize}
+    \item Developed a fully responsive \textbf{Education Analytics Dashboard} prototype with role-based access control (RBAC), monitoring, and reporting features; piloted with 200 users, enabling learning facilitators to manage and track educational outcomes effectively.
+    \item Deployed the platform on \textbf{DigitalOcean} with \textbf{MongoDB Atlas}, architected for seamless scalability to 100k+ users while ensuring secure API access, data compliance, and high availability for education stakeholders.
+\end{itemize}
+
+\textbf{Set Memory (NPM)} — Published CLI tool to auto-tune Node.js memory limits (\textbf{500+ downloads}).  
+\href{https://www.npmjs.com/package/set-memory}{[NPM]}
+
 \end{rSection}
 
+% -------------------- EDUCATION --------------------
 \begin{rSection}{EDUCATION}
 \textbf{B.Tech, Information Technology} \hfill Manipal University Jaipur \\
-2020--2024 \quad CGPA: 8.53
+2020–2024 \quad CGPA: \textbf{8.53}
 \end{rSection}
 
-\begin{rSection}{EXPERIENCE}
-\textbf{Data Engineer}, LTIMindTree \hfill Dec 2024--Present, Bengaluru
-\begin{itemize}
-    \item Automated data pipelines with Apache Airflow, orchestrating multi-source workflows with DAGs, Operators, and PySpark jobs using S3 hooks/boto3 on AWS EC2.
-    \item Migrated 50+ ETL workflows from Informatica to AWS Glue (PySpark), cutting server costs by 38\% and improving scalability.
-    \item Built serverless pipelines with AWS Lambda + Step Functions (Python/Node.js), reducing licensing costs by 20\% and enabling event-driven processing.
-    \item Optimized Glue jobs via Spark tuning and partitioning, achieving 30--50\% faster execution than baseline and handling terabyte-scale datasets.
-    \item Monitored 100+ financial tables with Splunk/Stonebranch, automating compliance reports, real-time alerts, and daily stakeholder updates.
-    \item Integrated CloudFormation logs into Splunk dashboards, improving observability of deployments and pipeline health across teams.Worked on DMS scripts and extraction for on-premise databases and cloud databases.
-    \item Ensured 75\%+ code coverage with Pytest/SonarQube to ensure fault tolerance of ETL jobs in AWS Glue and backend AWS Lambda services.
-\end{itemize}
-
-\textbf{Software Developer Engineer (MERN)}, Sabarmati Technologies Pvt. Ltd. (Contract) \hfill Jul--Nov 2024, Singapore
-\begin{itemize}
-    \item Built a responsive  prototype dashboard (RBAC, monitoring, reports) for Samagra Shiksha Project, trialed with 200 users and designed for role-based access for various learning facilitators.
-    \item Deployed on DigitalOcean with MongoDB Atlas, planning scalability for 100k+ users and ensuring secure API access for education stakeholders.
-\end{itemize}
-
-\textbf{Software Developer Intern}, HumanAI Pvt. Ltd. \hfill Dec 2023--Jun 2024, Singapore
-\begin{itemize}
-    \item Developed IoT water-monitoring dashboards (React) and optimized Docker + systemd services, cutting EC2 memory by 40\% across 10+ instances.
-    \item Built a Recipe Analyzer using GPT-4 and Next.js; reduced token usage by 24\% via caching/memoization, improving query response times.
-    \item Created blockchain dashboards for carbon credit verification using Hyperledger Besu, MetaMask, Web3.js with private network integration.
-    \item Conducted API testing (Postman) and presented architecture diagrams to clients, aligning backend services with business requirements.
-\end{itemize}
-\end{rSection}
-
-\begin{rSection}{PROJECTS}
-\textbf{Set Memory (NPM)} — Published CLI tool to auto-tune Node.js memory limits (500+ downloads). \href{https://www.npmjs.com/package/set-memory}{[NPM]} \\
-\textbf{CozyChat} — Real-time chat platform with join codes, private rooms, and session persistence. \href{https://cozy-chat-frontend-30.vercel.app/}{[Demo]}
-\end{rSection}
-
+% -------------------- RESEARCH --------------------
 \begin{rSection}{RESEARCH}
-\textbf{“Analysis of Breast Cancer Detection using AI/ML”} — Springer CCIS Best Paper Award, ICICC 2022 (97\% SVM accuracy). \href{https://link.springer.com/chapter/10.1007/978-981-19-4990-6_57}{[Link]}
+\begin{itemize}
+  \item Published paper with \textbf{Springer}: “Analysis of Breast Cancer Detection Algorithms using ML” (SVM, KNN, Random Forest).  
+  \href{https://link.springer.com/chapter/10.1007/978-981-19-4990-6_57}{[Link]} — Received Best Paper recognition at ICICC 2022.
+  \item Ongoing research: \textbf{Hybrid Genetic Algorithm for Whale and Gravitational Search Optimization} for feature selection in ML models.
+\end{itemize}
 \end{rSection}
 
+% -------------------- CERTIFICATIONS --------------------
 \begin{rSection}{CERTIFICATIONS}
-Red Hat System Administration II \quad | \quad Oracle Database Foundations \quad | \quad AWS Certified Developer Associate (Ongoing)
+\begin{itemize}
+  \item \textbf{AWS Certified Developer – Associate} (Ongoing) — Gaining hands-on expertise in designing, deploying, and monitoring serverless and event-driven cloud applications, including AWS Glue, Lambda, Step Functions, and S3.
+  \item \textbf{Oracle Database Foundations – Oracle Academy} — SQL programming, relational modeling, and performance-tuned design.
+  \item \textbf{Red Hat System Administration II – Red Hat Academy} — Linux server administration, shell scripting, and monitoring.
+\end{itemize}
 \end{rSection}
 
+% -------------------- SKILLS --------------------
 \begin{rSection}{SKILLS}
-\textbf{Languages:} Python, C++, JavaScript, TypeScript \\
-\textbf{Frontend:} React, Tailwind, Next.js \quad
-\textbf{Backend:} Node.js, Express, MongoDB, SQL, PostgreSQL \\
-\textbf{Cloud/Data:} AWS (Lambda, EC2, Glue, Step Functions, CloudWatch), PySpark, Airflow \\
-\textbf{DevOps:} Docker, Kubernetes, Git, GitHub Actions, SonarQube, Jest, Mocha, Pytest
+\textbf{Languages:} C++,Python,JavaScript (Node.js), SQL \\
+\textbf{Data Engineering:} PySpark, Airflow, ETL with AWS Glue, Lambda, Step Functions, DMS ,PostgreSQL\\
+\textbf{Backend:} FastAPI, Express.js, Node.js,HyperLedger \\
+\textbf{Cloud \& Big Data:} AWS (S3, Athena,Lambda,Glue,Step Functions,CloudWatch,SQS,SNS), Kafka,Digital Ocean(Droplet),Dbeaver \\
+\textbf{DevOps \& Infra:} Docker, Kubernetes, Terraform, GitHub Actions, Jenkins \\
+\textbf{Testing \& Monitoring:} Pytest, SonarQube, Splunk,Mocha,Jest
 \end{rSection}
 
 \end{document}
